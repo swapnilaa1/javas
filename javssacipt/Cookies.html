@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--   we can see the cookies are added at the domain address name..
+    max-age means the duration for which the cookies will remain till date..-->
+    <!--
+            <script>
+        document.cookie="username:users5 ;max-age:"+60*60*10+"; path=/";
+                 document.cookie="username:users8; expires:Fri, 30-Sep-2022 10:00:00 UTC";
+    
+    </script>
+
+
+    for deleting any cookies 
+    we have to set expires attribute as old date...
+    to then the cookies get distroyed...
+
+    cookies have path security etc....
+
+    how to append any cookies 
+    if we have created a cookies  again we create a cookies with the same name then old cookies get
+    overrittem by new cookies...
+    else if we create a cookies with new name then the old cookie gets appeneded by new cookies...
+
+
+    how to read cookies ..
+    all the cookies we make that comes together as a string ... 
+    then we can split them on the basis of ; 
+    so we get array of each key pair...
+    again we can split the array element in key value pair and we can get them 
+    
+        cookies data ?
+        when we send a request to server then the request with our data is stored in 
+        cookies at client side..
+        so whenever we again make request the cookies data is passed to server..
+        so this has some pro and cons in it ...
+        so there comes a problem of sequrity...
+
+
+-->
+    
+    <!--   Local storage...
+    local storage data gets stored in browser unless we delete it ...
+    so whenever we want to get the data from local storage.. it is always available to us
+    unless it is deleted..
+    local and session storage data is not passed to server...
+
+
+    <script>
+    window.localStorage.setItem('name' ,"swapnil" );
+    window.localStorage.setItem('your_name' ,"sushant" );
+    console.log(window.localStorage.getItem('name'));
+    console.log(window.localStorage.key(1));
+    console.log(localStorage.removeItem('name'));
+    localStorage.clear();
+    
+    </script>
+    -->
+
+
+    <!--
+        session storage data is permanent data , when we close the browser window the session data gets deleted
+        and even if we change the tab the session data gets deleted..
+    -->
+    <script>
+    
+    
+    
+    </script>
+        
+</body>
+</html>
